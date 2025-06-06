@@ -1,0 +1,146 @@
+/* Base Styles */
+body {
+  background-color: #f4f7fb;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+.course-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Course Heading */
+.course-header {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 20px auto;
+  color: #4CAF50;
+  text-align: center;
+}
+
+/* Carousel Section */
+.carousel-inner {
+  height: 320px; /* fixed height for large devices */
+}
+
+.carousel-item {
+  height: 320px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Carousel Dots Only (no arrows) */
+.carousel-indicators [data-bs-target] {
+  background-color: #2980B9;
+}
+
+/* Stylish Training Info Section */
+.container.my-5 {
+  margin-top: 30px;
+}
+
+/* Training & Learnings Sections */
+.row.g-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.gradient-card {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 100%;
+  min-height: 300px; /* Default minimum height for smaller devices */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start;
+}
+
+.gradient-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.gradient-card p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Align text and icons horizontally inside the card */
+.gradient-card .card-content {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  flex-wrap: wrap; /* Allow wrapping on smaller devices */
+}
+
+.gradient-card .card-content i {
+  font-size: 1.5rem;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.gradient-card .card-content p {
+  margin-bottom: 0;
+  font-size: 1.05rem;
+  padding-left: 10px; /* Ensure some space between icon and text */
+  flex: 1; /* Allow the text to take up available space */
+}
+
+/* Increased Height for Large Devices */
+@media (min-width: 992px) {
+  .gradient-card {
+    min-height: 380px; /* Increased height for large devices */
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .course-header {
+    font-size: 2rem;
+  }
+
+  .carousel-inner {
+    height: 250px; /* reduced height for smaller screens */
+  }
+
+  .carousel-item {
+    height: 250px; /* reduced height for smaller screens */
+  }
+
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Make both cards equal height on smaller screens */
+  .gradient-card {
+    height: 100%;
+    min-height: 280px; /* Minimum height for small devices */
+    flex-direction: column; /* Stack content vertically on small screens */
+  }
+
+  .gradient-card p {
+    padding-left: 0; /* Remove left padding on smaller screens */
+  }
+}

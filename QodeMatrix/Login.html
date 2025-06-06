@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="Login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="toggle">
+      <button id="loginTab" class="active">Login</button>
+      <button id="signupTab">Signup</button>
+    </div>
+
+    <h2 id="formTitle">Login Form</h2>
+
+  <!-- Message Box -->
+<div id="messageBox" style="display: none; color: red; margin-bottom: 10px;"></div>
+
+<!-- Existing Form Elements -->
+<form id="authForm">
+  <input type="text" id="username" placeholder="UserName" required/>
+  <input type="email" id="email" placeholder="Email Address" required />
+  <input type="password" id="password" placeholder="Password" required />
+  <div id="confirmPasswordDiv" style="display: none;">
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" />
+  </div>
+  <a href="#" id="reset">Forgot password?</a>
+  <button type="submit" id="submitBtn" onclick="storeName()">Login</button>
+</form>
+
+
+
+    <p id="switchText">Create an account <a href="#" id="switchLink">Signup now</a></p>
+    <button id="googleBtn">Continue with Google</button>
+  </div>
+<div id="message" style="margin-bottom: 10px; font-size: 14px;"></div>
+ 
+  <script type="module" src="Login.js"></script>
+  <script>
+  function storeName() {
+    const username = document.getElementById("usernameInput").value;
+    localStorage.setItem("username", username);
+    window.location.href = "Home.html"; 
+  }
+</script>
+</body>
+</html>

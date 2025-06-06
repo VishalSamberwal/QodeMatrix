@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Development Course</title>
+
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      background-color: #f4f7fb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .back-home-btn {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+
+    .course-header {
+      text-align: center;
+      margin: 40px 0 30px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .carousel-container {
+      max-width: 900px;
+      margin: auto;
+      background-color: black;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-inner {
+      height: 260px;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-inner {
+        height: 180px;
+      }
+
+      .course-header {
+        font-size: 1.8rem;
+      }
+    }
+
+    .info-card {
+      padding: 30px;
+      border-radius: 15px;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      height: 100%;
+    }
+
+    .info-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .info-card p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="Home.html" class="back-home-btn"><i class="bi bi-arrow-left"></i> Back to Home</a>
+  </div>
+
+  <div class="container">
+    <h2 class="course-header">Web Development Course</h2>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container mb-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/w1.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/w2.jpg" class="d-block w-100" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/j3.jpg" class="d-block w-100" alt="Image 3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stylish Training Info Section -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="info-card" style="background: linear-gradient(135deg, #00C9FF, #92FE9D);">
+            <h3 class="mb-3"><i class="bi bi-person-video3"></i> How the Company Will Train You</h3>
+            <p>✔️ Live mentor-led classes with practical examples and projects.</p>
+            <p>✔️ Weekly assignments to help you master HTML, CSS, JavaScript, and more.</p>
+            <p>✔️ Hands-on experience in developing fully functional websites.</p>
+            <p>✔️ Real-world projects and front-end development tools.</p>
+            <p>✔️ Exposure to the latest trends in web design and development.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="info-card" style="background: linear-gradient(135deg, #FFB75E, #ED8F03);">
+            <h3 class="mb-3"><i class="bi bi-lightbulb-fill"></i> What You'll Learn</h3>
+            <p>🎯 Front-end development with HTML5, CSS3, and JavaScript.</p>
+            <p>🎯 Responsive web design using Bootstrap and media queries.</p>
+            <p>🎯 Introduction to back-end web development (Node.js, PHP, etc.).</p>
+            <p>🎯 Best practices in UI/UX design for optimal user experience.</p>
+            <p>🎯 Full-stack web development projects and deploying applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

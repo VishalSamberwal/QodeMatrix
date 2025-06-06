@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>App Development Course</title>
+
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #f4f7fb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .back-home-btn {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+
+    .course-header {
+      text-align: center;
+      margin: 40px 0 30px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .carousel-container {
+      max-width: 900px;
+      margin: auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-inner {
+      height: 260px;
+    }
+
+    .carousel-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    @media (max-width: 768px) {
+      .carousel-inner {
+        height: 180px;
+      }
+
+      .course-header {
+        font-size: 1.8rem;
+      }
+    }
+
+    .info-card {
+      padding: 30px;
+      border-radius: 15px;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      height: 100%;
+    }
+
+    .info-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .info-card p {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="Home.html" class="back-home-btn"><i class="bi bi-arrow-left"></i> Back to Home</a>
+  </div>
+
+  <div class="container">
+    <h2 class="course-header">App Development Course</h2>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container mb-5">
+      <div id="appDevCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#appDevCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#appDevCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#appDevCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#appDevCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/a1.jpg" class="d-block w-100" alt="Flutter Development" />
+          </div>
+          <div class="carousel-item">
+            <img src="Images/a2.jpg" class="d-block w-100" alt="Firebase Backend" />
+          </div>
+          <div class="carousel-item">
+            <img src="Images/j3.jpg" class="d-block w-100" alt="Kotlin Android" />
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <!-- Training Info Section -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="info-card" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);">
+            <h3 class="mb-3"><i class="bi bi-person-video3"></i> How the Company Will Train You</h3>
+            <p>✔️ Live mentor-led interactive sessions on mobile app frameworks.</p>
+            <p>✔️ Hands-on projects with Flutter, Firebase, Kotlin, and Java.</p>
+            <p>✔️ Weekly coding challenges and debugging exercises.</p>
+            <p>✔️ Deep dives into app architecture, UI/UX, and performance tuning.</p>
+            <p>✔️ Supportive doubt clearing and career guidance sessions.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="info-card" style="background: linear-gradient(135deg, #FF416C, #FF4B2B);">
+            <h3 class="mb-3"><i class="bi bi-lightbulb-fill"></i> What You'll Learn</h3>
+            <p>🎯 Building cross-platform apps with Flutter and Dart.</p>
+            <p>🎯 Integrating Firebase services: Authentication, Firestore, and Cloud Functions.</p>
+            <p>🎯 Native Android app development with Kotlin and Java.</p>
+            <p>🎯 App lifecycle, state management, and performance optimization.</p>
+            <p>🎯 Publishing apps to Google Play Store and Apple App Store.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -37,3 +37,12 @@
       sidebar.classList.remove('active');
     });
   });
+
+const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function (e) {
+    
+    setTimeout(() => {
+      form.reset(); 
+    }, 1000); 
+  });

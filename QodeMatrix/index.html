@@ -312,7 +312,38 @@ qodematrixservices@gmail.com</p></a>
   </footer>
   
 </section>
+<!-- Chat Avatar Button -->
+<div class="chatbot-avatar" onclick="toggleChat()">
+  <img src="Images\profile.png" alt="Chatbot" />
+</div>
 
+<div class="chatbot-avatar-wrapper">
+  <div class="chatbot-popup">Hi, how can I assist you today about Qodematrix?</div>
+  <div class="chatbot-avatar" onclick="toggleChat()">
+    <img src="Images/profile.png" alt="Chatbot" />
+  </div>
+</div>
+
+<!-- Chat Window -->
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-title">QodeBot</div>
+    <div class="chat-subtitle">Your friendly assistant from Qodematrix!</div>
+    <button class="chat-close" onclick="toggleChat()">✖</button>
+  </div>
+
+  <div class="chat-body" id="chatBody">
+    <div class="bot-message">
+      <img class="icon" src="https://i.ibb.co/2kW56kL/avatar-girl.png" />
+      <span>Hi there, Good Morning 👋</span>
+    </div>
+  </div>
+
+  <div class="chat-footer">
+    <input type="text" id="userInput" placeholder="Type your message here..." />
+    <button onclick="sendMessage()">➤</button>
+  </div>
+</div>
   <script src="Home.js"></script>
  <script src="Login.js"></script>
  
